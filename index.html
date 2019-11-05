@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
 <head>
 	<title>Our Love Story</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -12,20 +13,28 @@
 	<link href="css/default.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/garden.js"></script>
-    <script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/mouseheart.js"></script>
 </head>
 
 <body>
+	<div>
+		<audio src="./夜空中最亮的星(有bbox).mp3" controls="controls" loop="loop" autoplay="autoplay">
+		</audio>
+	</div>
 	<div id="mainDiv">
 		<div id="content">
 			<div id="code">
 				<span class="comments">/**</span><br />
-				<span class="space"/><span class="comments">* We are both Fudan SSers and programmers,</span><br />
-				<span class="space"/><span class="comments">* so I write some code to celebrate our 1st anniversary.</span><br />
-				<span class="space"/><span class="comments">*/</span><br />
-				Boy i = <span class="keyword">new</span> Boy(<span class="string">"hackerzhou"</span>);<br />
-				Girl u = <span class="keyword">new</span> Girl(<span class="string">"MaryNee"</span>);<br />
-				<span class="comments">// Nov 2, 2010, I told you I love you. </span><br />
+				<span class="space" /><span class="comments">* 我 最 最 可 爱 的 小 天 使,</span><br />
+				<span class="space" /><span class="comments">* 今 天 是 5 月 20 日 ， 我 们 俩 的 节 日.</span><br />
+				<span class="space" /><span class="comments">* 给 你 准 备 了 小 礼 物 嘻 嘻 ，快 点 来 上 海 领 取 ！</span><br />
+				<span class="space" /><span class="comments">* 下 面 这 些 代 码 没 有 改 ， 看 不 懂 的 话 下 次 再 讲 给 你 .</span><br />
+				<span class="space" /><span class="comments">* 请 允 许 我 用 程 序 的 方 式 表 达 我 对 你 的 爱.</span><br />
+				<span class="space" /><span class="comments">*/</span><br />
+				Boy i = <span class="keyword">new</span> Boy(<span class="string">"liyp"</span>);<br />
+				Girl u = <span class="keyword">new</span> Girl(<span class="string">"gucy"</span>);<br />
+				<span class="comments">// Oct 26, 2018, I falled in love with you. </span><br />
 				i.love(u);<br />
 				<span class="comments">// Luckily, you accepted and became my girlfriend eversince.</span><br />
 				u.accepted();<br />
@@ -33,57 +42,59 @@
 				i.miss(u);<br />
 				<span class="comments">// And take care of u and our love.</span><br />
 				i.takeCareOf(u);<br />
-				<span class="comments">// You say that you won't be so easy to marry me.</span><br />
-				<span class="comments">// So I keep waiting and I have confidence that you will.</span><br />
-				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br />
-				<span class="keyword">while</span> (isHesitate) {<br />
-				<span class="placeholder"/>i.waitFor(u);<br />
-				<span class="placeholder"/><span class="comments">// I think it is an important decision</span><br />
-				<span class="placeholder"/><span class="comments">// and you should think it over.</span><br />
-				<span class="placeholder"/>isHesitate = u.thinkOver();<br />
+				<span class="comments">// You say that you are a little Angle.</span><br />
+				<span class="comments">// And you are a lucky star for me.</span><br />
+				<span class="keyword">boolean</span> isLucky = <span class="keyword">true</span>;<br />
+				<span class="keyword">while</span> (isLucky) {<br />
+				<span class="placeholder" />i.bringHappy(u);<br />
+				<span class="placeholder" /><span class="comments">// I think it is a fantastic thing.</span><br />
+				<span class="placeholder" /><span class="comments">// and you would enjoy it.</span><br />
+				<span class="placeholder" />isLucky = u.liveHappilyWith(i);<br />
 				}<br />
-				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br />
-				i.marry(u);<br />
+				<span class="comments">// We have spent a long time to find each other.</span><br />
+				<span class="comments">// I wanna do sth to prove that I mind u and care about u.</span><br />
+				<span class="comments">// I told little but do it more.</span><br />
+				i.belongWith(u);<br />
 				i.liveHappilyWith(u);<br />
 			</div>
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
 				<div id="words">
 					<div id="messages">
-						Minyue, I have fallen in love with you for
+						阿古, I have fallen in love with you for
 						<div id="elapseClock"></div>
 					</div>
 					<div id="loveu">
-						Love u forever and ever.<br/>
-						<div class="signature">- hackerzhou</div>
+						Love u forever and ever.<br />
+						<div class="signature">- Basin</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="copyright">
+		<!--<div id="copyright">
 			Inspired by <a href="http://www.openrise.com/lab/FlowerPower/">FlowerPower</a> project.<br />
-			Copyright © 2011 <a href='http://hackerzhou.me'>hackerzhou.me</a> 2009-2011
 		</div>
+    -->
 	</div>
 	<script type="text/javascript">
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
 		var together = new Date();
-		together.setFullYear(2010, 10, 2);
-		together.setHours(20);
+		together.setFullYear(2018, 9, 26);
+		together.setHours(0);
 		together.setMinutes(0);
 		together.setSeconds(0);
 		together.setMilliseconds(0);
-		
+
 		if (!document.createElement('canvas').getContext) {
 			var msg = document.createElement("div");
 			msg.id = "errorMsg";
-			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
 			document.body.appendChild(msg);
 			$("#code").css("display", "none")
 			$("#copyright").css("position", "absolute");
 			$("#copyright").css("bottom", "10px");
-		    document.execCommand("stop");
+			document.execCommand("stop");
 		} else {
 			setTimeout(function () {
 				startHeartAnimation();
@@ -97,6 +108,9 @@
 			adjustCodePosition();
 			$("#code").typewriter();
 		}
+
+		
 	</script>
 </body>
+
 </html>
